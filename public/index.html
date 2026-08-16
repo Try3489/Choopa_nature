@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChoopaNature — La nature en images</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="#accueil">Choopa<span>Nature</span></a>
+<nav><a href="#galerie">Galerie</a><a href="#categories">Catégories</a><a href="#photographe">Vendre une photo</a></nav>
+<div class="actions"><button class="icon-btn" id="cartBtn">🛒 <b id="cartCount">0</b></button><button class="outline-btn" id="loginBtn">Connexion</button></div>
+</header>
+<main>
+<section class="hero" id="accueil"><div class="hero-content">
+<p class="eyebrow">CHOOPANATURE • PHOTOGRAPHIE</p>
+<h1>La nature mérite<br><span>d'être admirée.</span></h1>
+<p class="hero-text">Découvrez des photographies uniques de paysages, animaux, océans, forêts et bien plus encore. Achetez vos images préférées et soutenez les photographes.</p>
+<div class="hero-buttons"><a class="primary-btn" href="#galerie">Explorer la galerie</a><a class="secondary-btn" href="#photographe">Devenir photographe</a></div>
+</div></section>
+<section class="section" id="galerie">
+<div class="section-heading"><div><p class="eyebrow">GALERIE</p><h2>Photos populaires</h2></div><input id="searchInput" class="search" type="search" placeholder="Rechercher une photo..."></div>
+<div class="chips" id="categories">
+<button class="chip active" data-category="Toutes">Toutes</button><button class="chip" data-category="Paysage">Paysage</button><button class="chip" data-category="Océan">Océan</button><button class="chip" data-category="Forêt">Forêt</button><button class="chip" data-category="Animaux">Animaux</button><button class="chip" data-category="Fleurs">Fleurs</button>
+</div>
+<div class="gallery" id="gallery"></div>
+</section>
+<section class="seller section" id="photographe"><div><p class="eyebrow">POUR LES PHOTOGRAPHES</p><h2>Transformez vos photos en revenus.</h2><p>Créez votre espace photographe, présentez votre travail et proposez vos images à la vente.</p></div><button class="primary-btn" id="sellBtn">Commencer à vendre</button></section>
+</main>
+<footer><div class="brand">Choopa<span>Nature</span></div><p>© 2026 ChoopaNature — La nature en images.</p></footer>
+<div class="modal hidden" id="modal"><div class="modal-card"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<script src="app.js"></script>
+</body></html>
+    
