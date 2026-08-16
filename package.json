@@ -1,0 +1,12 @@
+{
+  "name": "choopa-nature",
+  "version": "1.0.0",
+  "description": "ChoopaNature - galerie de photos de nature",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
